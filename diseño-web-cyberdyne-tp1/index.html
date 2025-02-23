@@ -1,0 +1,614 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image" href="./public/IMG/Ico/cyberdyne-logo2.png" />
+    <!-- CSS y BOOTSTRAP 5.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./src/style.css"> <!-- Hoja de estilo externa -->
+    <!--ÍCONOS -->
+    <script src="https://kit.fontawesome.com/0bc8dc8afa.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fontawesome.com/v4.7.0/assets/font-awesome/css/font-awesome.css">
+    <!-- TÍTULO -->
+    <title>CYBERDYNE SYSTEMS S.A.</title>
+  </head>
+
+
+
+  <body class="productos-body">
+
+    <!-- NAVBAR MOBILE CON TOGGLE -->    
+    <nav class="navbar bg-body-tertiary fixed-top d-md-none toggle-menu ">
+        <div class="container-fluid leftmenu"><!-- Elementos toggle menu por defecto de Bootstrap-->
+            <div class="brand-logo">
+                <a href="../index.html"><img src="./public/IMG/Ico/cyberdyne-logo2.png" alt="Cyberdine logo" width="60"></a>
+            </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body py-0"><!--Links a páginas-->
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="./src/pages/productos.html">Productos</a></li>
+                <li><a href="./src/pages/sobre-nosotros.html">Sobre nosotros</a></li>
+                <li><a href="./src/pages/asistencia.html">Asistencia</a></li>
+              </ul>
+            <div class="nav-icons"> <!-- Botones de login, carrito e idiomas -->
+            <div class="dropdown">
+                <button class="btn data-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="../IMG/Ico/account-ico.png" alt="cuenta" width="20">
+                </button> <!-- Elementos de Dropdown de Bootstrap - íconos hechos en Photoshop-->
+                
+                <ul class="dropdown-menu login-form" aria-labelledby="dropdownMenuButton1">
+                <li><form class="px-4 py-3"><!-- Login por defecto de Bootstrap combinado con Dropdown-->
+                    <div class="mb-3">
+                    <label for="exampleDropdownFormEmail2" class="form-label">Correo electrónico</label>
+                    <input type="email" class="form-control" id="exampleDropdownFormEmail2" placeholder="email@example.com">
+                    </div>
+                    <div class="mb-3">
+                    <label for="exampleDropdownFormPassword1" class="form-label">Contraseña</label>
+                    <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
+                    </div>
+                    <div class="mb-3">
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                        <label class="form-check-label" for="dropdownCheck">
+                        Recordarme
+                        </label>
+                    </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary p-1">Iniciar sesión</button>
+                </form>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="registro.html">Registrarse</a>
+                <a class="dropdown-item" href="#">Olvidé mi contraseña</a></li>
+                <li><a class="dropdown-item" href="#">Acceso Partners</a></li>
+                </ul>
+            </div>
+
+
+            <a class="chart" href="#"><img src="../IMG/Ico/cart-ico.png" alt="carrito" width="20"></a>
+            <div class="dropdown">
+                <button class="btn data-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="../IMG/Ico/lan-ico.png" alt="lenguaje" width="20">
+                </button>
+                <ul class="dropdown-menu dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                  <li><a class="dropdown-item active" href="#">English</a></li>
+                  <li><a class="dropdown-item" href="#">Español</a></li>
+                  <li><a class="dropdown-item" href="#">中文</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Más Idiomas</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </nav>
+
+      
+<!-- NAVBAR DESKTOP SENCILLA -->      
+    <header class="header transparent">
+        <div class="brand-logo">
+            <a href="../index.html"><img src="./public/IMG/Ico/cyberdyne-logo2.png" alt="Cyberdine logo" width="60"></a>
+        </div>
+        <nav class="navbar">
+            <ul class="nav-links">
+              <li><a href="./src/pages/productos.html">Productos</a></li>
+              <li><a href="./src/pages/sobre-nosotros.html">Sobre nosotros</a></li>
+              <li><a href="./src/pages/asistencia.html">Asistencia</a></li>
+            </ul>
+        </nav>
+
+
+        <!-- Botones de login, carrito e idiomas -->
+        <div class="nav-icons"> 
+            <div class="dropdown">
+                <button class="btn data-toggle" type="button" id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="../IMG/Ico/account-ico.png" alt="cuenta" width="20">
+                </button>
+                
+                <ul class="dropdown-menu login-form" aria-labelledby="dropdownMenuButton3">
+                <li><form class="px-4 py-3">
+                    <div class="mb-3">
+                    <label for="exampleDropdownFormEmail1" class="form-label">Correo electrónico</label>
+                    <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
+                    </div>
+                    <div class="mb-3">
+                    <label for="exampleDropdownFormPassword2" class="form-label">Contraseña</label>
+                    <input type="password" class="form-control" id="exampleDropdownFormPassword2" placeholder="Password">
+                    </div>
+                    <div class="mb-3">
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="dropdownCheck2">
+                        <label class="form-check-label" for="dropdownCheck2">
+                        Recordarme
+                        </label>
+                    </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary p-1">Iniciar sesión</button>
+                </form>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="registro.html">Registrarse</a>
+                <a class="dropdown-item" href="#">Olvidé mi contraseña</a></li>
+                <li><a class="dropdown-item" href="#">Acceso Partners</a></li>
+                </ul>
+            </div>
+
+
+            <a class="chart" href="#"><img src="../IMG/Ico/cart-ico.png" alt="carrito" width="20"></a>
+            <div class="dropdown">
+                <button class="btn data-toggle" type="button" id="dropdownMenuButton4" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="../IMG/Ico/lan-ico.png" alt="lenguaje" width="20">
+                </button>
+                <ul class="dropdown-menu dropdown-menu" aria-labelledby="dropdownMenuButton4">
+                  <li><a class="dropdown-item active" href="#">English</a></li>
+                  <li><a class="dropdown-item" href="#">Español</a></li>
+                  <li><a class="dropdown-item" href="#">中文</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Más Idiomas</a></li>
+                </ul>
+              </div>
+
+        </div>
+    </header>
+
+<!-- MAIN CON BANNER - Imagen de fondo en CSS realizada con Photoshop -->    
+    <main class="banner">
+        <div class="hero"><h2>EL FUTURO, EN TU HOGAR</h2></div>
+        <div class="banner-buttn"><a href="#" class="btn btn-lg btn-dark">MÁS INFORMACIÓN</a></div>
+    </main>
+
+
+<!--CATEGORÍAS PRINCIPALES -->
+<!-- Se utilizan Cards de Boostrap -->
+    <section class="container-fluid categories">
+
+        <div class="card categories-card">
+            <img src="https://res.cloudinary.com/dl0ek5fh6/image/upload/v1740203775/robots/IMG/gdp2tlbv49htfstsyvvg.jpg" class="card-img-top" alt="categoria-limpieza">
+            <div class="card-body m-2 text-center">
+              <h5 class="card-title">LIMPIEZA</h5>
+              <a href="#" class="btn btn-dark m-3 boton-1">VER PRODUCTOS</a>
+            </div>
+          </div>
+
+          <div class="card categories-card">
+            <img src="https://res.cloudinary.com/dl0ek5fh6/image/upload/v1740203779/robots/IMG/lvcnlrlufg4fmu8euoy0.png" class="card-img-top" alt="categoria-seguridad">
+            <div class="card-body m-2 text-center">
+              <h5 class="card-title">SEGURIDAD</h5>
+              <a href="#" class="btn btn-dark m-3 boton-1">VER PRODUCTOS</a>
+            </div>
+          </div>
+
+          <div class="card categories-card">
+            <img src="https://res.cloudinary.com/dl0ek5fh6/image/upload/v1740203780/robots/IMG/nnkakm7twnzntltwb1kj.jpg" class="card-img-top" alt="cotegoria-industria">
+            <div class="card-body m-2 text-center">
+              <h5 class="card-title">INDUSTRIAS</h5>
+              <a href="#" class="btn btn-dark m-3 boton-1">VER PRODUCTOS</a>
+            </div>
+          </div>
+
+    </section>
+
+<!--SLIDER DE GRID CON BOOTSTRAP-->
+<!-- Se utiliza el elemento carrousel de Bootstrap-->
+<div class="text-center">
+    <h2>TODO PARA LA DEFENSA DEL HOGAR</h2>
+</div>
+    <div id="carouselgrid" class="carousel slide ">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselgrid" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselgrid" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselgrid" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner seguridad-slider">
+          <div class="carousel-item active">
+            <div class="gallery">
+                <div class="column1">
+                    <img src="https://res.cloudinary.com/dl0ek5fh6/image/upload/v1740203775/robots/IMG/Grid/zmxn1jwhetgcnboz3wtq.jpg" alt="robot metalhead vertical">
+                </div>
+                <div class="column2">
+                    <div class="row1">
+                        <img src="https://res.cloudinary.com/dl0ek5fh6/image/upload/v1740203778/robots/IMG/Grid/hf8oqdxtuc1o5ktopvgm.jpg" alt="robot lanzallamas blanco">
+                    </div>
+                   <div class="row2">
+                    <img src="https://res.cloudinary.com/dl0ek5fh6/image/upload/v1740203777/robots/IMG/Grid/j1ivnghzc36hpqy1lu47.jpg" alt="robot metal headhorizontal">
+                    <img src="https://res.cloudinary.com/dl0ek5fh6/image/upload/v1740203776/robots/IMG/Grid/o2zoi2ulr3ddbtez9fsy.jpg" alt="robot lanzallamas blanco">
+                   </div>
+                </div>
+
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="gallery gallery2">
+                <div class="column1">
+                    <img src="https://res.cloudinary.com/dl0ek5fh6/image/upload/v1740203776/robots/IMG/Grid/ddrpmkuavaxqvjctyuwx.jpg" alt="astro patrulla">
+                </div>
+                <div class="column2">
+                    <div class="row1">
+                        <img src="https://res.cloudinary.com/dl0ek5fh6/image/upload/v1740203778/robots/IMG/Grid/ryhn3sv50h9htdegsgp9.jpg" alt="robot desierto perro patrulla">
+                    </div>
+                   <div class="row2">
+                    <img src="https://res.cloudinary.com/dl0ek5fh6/image/upload/v1740203780/robots/IMG/Grid/mrjdjxnr8gf3gsh3fo4e.webp" alt="robot con radar y sensores">
+                    <img src="https://res.cloudinary.com/dl0ek5fh6/image/upload/v1740203780/robots/IMG/Grid/zem2bh5rqbr7rtxmoxmi.webp" alt="robot negro perro paralizador">
+                   </div>
+                </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="gallery">
+                <div class="column1">
+                    <img src="https://res.cloudinary.com/dl0ek5fh6/image/upload/v1740203780/robots/IMG/Grid/nvrnyd1hwfwtflmgwrrv.jpg" alt="drone con cámara y patrulla">
+                </div>
+                <div class="column2">
+                    <div class="row1">
+                        <img src="https://res.cloudinary.com/dl0ek5fh6/image/upload/v1740203775/robots/IMG/Grid/bgvfxqjh9n1tec83qjtf.jpg" alt="riley producto inteligente camara">
+                    </div>
+                   <div class="row2">
+                    <img src="https://res.cloudinary.com/dl0ek5fh6/image/upload/v1740203774/robots/IMG/Grid/qszny4wjws0efrqnylyx.webp" alt="patrulla hogar mini ruedas">
+                    <img src="https://res.cloudinary.com/dl0ek5fh6/image/upload/v1740203779/robots/IMG/Grid/nqp4sxi2fdfrmxygihjy.jpg" alt="perro negro lobo manada robot">
+                   </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselgrid" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon square-arrow" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselgrid" data-bs-slide="next">
+          <span class="carousel-control-next-icon square-arrow" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+<!--Container con info de producto principal, se utiliza elemento container de Bootstrap y accordion para la versión Mobile -->
+      <div class="companeros-container">
+        <div class="text-center">
+            <h2>COMPAÑEROS DE VIDA</h2>
+        </div>
+        <section class="buddies">
+            <div class="buddies-banner">
+                <img src="https://res.cloudinary.com/dl0ek5fh6/image/upload/v1740203781/robots/IMG/gqoxsyzaak7bcjg8acml.jpg" alt="astro con perro en casa">   
+            </div>
+            <div class="texto-astro">
+                <h4>Astro te ofrece una gama completa de funcionalidades para hacer tu vida mejor.</h4>
+            </div>
+            
+            <div class="buddies-cols">
+                <div class="column1">
+                    <div class="ico-h3">
+                        <i class="fa-solid fa-arrows-turn-to-dots"></i>
+                        <h3>Movimiento inteligente</h3>
+                    </div>
+                    <p>Astro navega tu hogar con precisión gracias a sus sensores avanzados y tecnología de inteligencia artificial. Detecta y evita obstáculos, mapeando el entorno para moverse eficientemente y con cuidado.</p>
+                </div>
+                <div class="column2">
+                    <div class="ico-h3">
+                        <i class="fa-solid fa-circle-exclamation"></i>
+                        <h3>Seguridad en tu hogar</h3>
+                    </div>
+                    <p>Astro ofrece seguridad avanzada con cámaras de alta resolución y sensores inteligentes. Patrulla tu hogar autónomamente, detecta movimientos sospechosos y envía alertas en tiempo real para mantenerte protegido.</p>
+                </div>
+                <div class="column3">
+                    <div class="ico-h3">
+                        <i class="fa-solid fa-heart"></i>
+                        <h3>Lazos familiares</h3>
+                    </div>
+                    <p>En nuestra empresa, creemos en la tecnología que conecta. Astro se integra en tu hogar, interactuando y aprendiendo de cada miembro de la familia. Con reconocimiento facial y respuestas personalizadas, Astro crea lazos únicos, fortaleciendo la unidad familiar.</p>
+                </div>
+            </div>
+            <div class="buddies-accordion d-md-none container-fluid">
+                <div class="accordion" id="buddies-acordion-resp">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header m-0">
+                            <button class="accordion-button fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                                <i class="fa-solid fa-arrows-turn-to-dots"></i> Movimiento inteligente
+                            </button>
+                           
+                        </h2>
+                        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                            <div class="accordion-body">
+                                <p>Astro navega tu hogar con precisión gracias a sus sensores avanzados y tecnología de inteligencia artificial. Detecta y evita obstáculos, mapeando el entorno para moverse eficientemente y con cuidado.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header m-0">
+                            <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                                <i class="fa-solid fa-circle-exclamation"></i> Seguridad en tu hogar
+                            </button>
+                           
+                        </h2>
+                        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                <p>Astro ofrece seguridad avanzada con cámaras de alta resolución y sensores inteligentes. Patrulla tu hogar autónomamente, detecta movimientos sospechosos y envía alertas en tiempo real para mantenerte protegido.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header m-0">
+                            <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                                <i class="fa-solid fa-heart"></i>Lazos familiares
+                            </button>
+                            
+                        </h2>
+                        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                <p>En nuestra empresa, creemos en la tecnología que conecta. Astro se integra en tu hogar, interactuando y aprendiendo de cada miembro de la familia. Con reconocimiento facial y respuestas personalizadas, Astro crea lazos únicos, fortaleciendo la unidad familiar.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+
+<!-- Slider automático con scroll horizontal -->
+<!-- Se utiliza en scroll infinite para dar efecto de slider, se repiten imágenes para rellenar el slider -->
+<section class="partners">
+    <div class="text-center">
+        <h2>NUESTROS PARTNERS ALREDEDOR DEL MUNDO</h2>
+        <p>Contamos con una extensa red de Partners que nos ayudan a crear un mejor mañana.</p>
+    </div>
+    <div class="logo-slider">
+    
+        <div class="logo-moving">
+            <div class="slideb">
+                <img src="./public/IMG/partners/vault-tec-logo.png" alt="vault-tec-logo">
+            </div>
+            <div class="slideb">
+                <img src="./public/IMG/partners/reeman-logo.webp" alt="reeman-logo">
+            </div>
+            <div class="slideb">
+                <img src="./public/IMG/partners/white-bear-logo.png" alt="white-bear-logo">
+            </div>
+            <div class="slideb">
+                <img src="./public/IMG/partners/turin-logo.png" alt="turin-logo">
+            </div>
+            <div class="slideb">
+                <img src="./public/IMG/partners/boston-dynamics-logo.svg" alt="boston-dynamics-logo">
+            </div>
+            <div class="slideb">
+                <img src="./public/IMG/partners/vault-tec-logo.png" alt="vault-tec-logo">
+            </div>
+            <div class="slideb">
+                <img src="./public/IMG/partners/kingdom-logo.webp" alt="kingdom-logo">
+            </div>
+            <div class="slideb">
+                <img src="./public/IMG/partners/reeman-logo.webp" alt="reeman-logo">
+            </div>
+            <div class="slideb">
+                <img src="./public/IMG/partners/white-bear-logo.png" alt="white-bear-logo">
+            </div>
+            <div class="slideb">
+                <img src="./public/IMG/partners/turin-logo.png" alt="turin-logo">
+            </div>
+            <div class="slideb">
+                <img src="./public/IMG/partners/kingdom-logo.webp" alt="kingdom-logo">
+            </div>
+            <div class="slideb">
+                <img src="./public/IMG/partners/vault-tec-logo.png" alt="vault-tec-logo">
+            </div>
+            <div class="slideb">
+                <img src="./public/IMG/partners/reeman-logo.webp" alt="reeman-logo">
+            </div>
+            <div class="slideb">
+                <img src="./public/IMG/partners/white-bear-logo.png" alt="white-bear-logo">
+            </div>
+            <div class="slideb">
+                <img src="./public/IMG/partners/turin-logo.png" alt="turin-logo">
+            </div>
+        </div>
+        
+    </div>
+    <div class="partner-buttn text-center">
+        <a href="#" class="btn btn-dark boton-1">Quiero ser Partner</a>
+    </div>
+</section>
+
+<!-- GRID DE PRODUCTOS -->
+<section class="lil-buddies-container">
+    
+    <div class="text-center">
+        <h2>PEQUEÑOS AMIGOS</h2>
+    </div>
+    <div class="lil-buddies">
+        <div class="buddie-square">
+            <img src="https://res.cloudinary.com/dl0ek5fh6/image/upload/v1740203773/robots/IMG/Buddies/yplkbzqvhsyjjl8zvuj9.jpg" width="200" height="200" alt="ballie robot amarillo">
+            <a href="#">Ballie</a>
+        </div>
+
+        <div class="buddie-square">
+            <img src="https://res.cloudinary.com/dl0ek5fh6/image/upload/v1740203774/robots/IMG/Buddies/qg3xs8cmqksyucgpbuod.jpg" width="200" height="200" alt="clickbot robot programable blanco">
+            <a href="#">Clickbot</a>
+        </div>
+        <div class="buddie-square">
+            <img src="https://res.cloudinary.com/dl0ek5fh6/image/upload/v1740203774/robots/IMG/Buddies/yc6qaa8ahgx7mm7fzhcb.webp" width="200" height="200" alt="pichicho robot para animales">
+            <a href="#">Pichicho</a>
+        </div>
+        <div class="buddie-square">
+            <img src="https://res.cloudinary.com/dl0ek5fh6/image/upload/v1740203779/robots/IMG/Buddies/ljimkbombrhvps14tyjf.jpg" width="200" height="200" alt="ashley too robot rosa cantante">
+            <a href="#">AshleyToo</a>
+        </div>
+    </div>
+    
+
+
+</section>
+
+<!-- FORMULARIO -->
+<section class="contact-us">
+    <div class="text-center">
+        <h2>CONTACTO</h2>
+      <!-- SECCIÓN CON FORMULARIO DE CONTACTO -->
+      <!-- Se utiliza el elemento form de Bootstrap -->
+      <div class=" contact-form my-5 container">
+        <div class="row justify-content-center">
+            <div class="col-8">
+                <form>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="name" placeholder="Nombre" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="surname" class="form-label">Apellido</label>
+                        <input type="text" class="form-control" id="surname" placeholder="Apellido" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="mail" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="mail" placeholder="usuario@correo.com" required>
+                    </div>
+                    <div class="form-phone-divided">
+                        <div class="mb-3">
+                            <label for="country" class="form-label">Prefijo</label>
+                            <input type="number" class="form-control" id="country" placeholder="+549">
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Teléfono</label>
+                            <input type="number" class="form-control" id="phone" placeholder="1127182818" required>
+                        </div>
+                    </div>
+                   
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Mensaje</label>
+                        <textarea class="form-control" id="message" rows="3" placeholder="Ingrese su consulta!" required></textarea>
+                    </div>
+                    <div class="form-bttn text-center">
+                        <a href="#" class="btn btn-primary w-50 fs-5">Enviar</a>
+                    </div>
+                    
+                </form>
+            </div>
+        </div>
+       </div>
+    </div>
+</section>
+
+
+<!-- Newsletter -->
+<!-- Se utiliza el elemento form de Bootstrap -->
+<section class="newsletter">
+    <div class="news-container">
+        <h2>Recibir novedades</h2>
+        <div class="news-form-container">
+            <form class="newsletter-form">
+                <div class="form-group">
+                    <label for="email-newsletter-component" class="visually-hidden">Ingresa tu Mail</label>
+                    <input type="email" class="form-control" id="email-newsletter-component" placeholder="Ingresa tu Mail" aria-label="email-newsletter-component" aria-describedby="email-newsletter-component" required>
+                </div>
+                <div class="btn-container">
+                    <button type="submit" class="btn btn-primary">Suscribirse</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+    
+
+<!--FOOTER-->
+<!-- Se combina Grid y Flex para lograr redistribución Responsive, los links redirecionan al mismo sitio -->  
+    
+<section class="footer">
+    <div class="footer-ro">
+        <div class="logo-footer"><a href="/index.html"><img src="../IMG/Ico/cyberdyne-logo.png" width="80" alt="cyberdyne logo"></a></div>
+        <div class="footer-social">   
+            <a href="#"><img src="./public/IMG/Ico/footer-ico/discord.png" width="20" alt="logo discord"></a>
+            <a href="#"><img src="./public/IMG/Ico/footer-ico/github.png" width="20" alt="logo github"></a>
+            <a href="#"><img src="./public/IMG/Ico/footer-ico/instagram.png" width="20" alt="logo instagram"></a>
+            <a href="#"><img src="./public/IMG/Ico/footer-ico/linkedin.png" width="20" alt="logo linkedin"></a>
+            <a href="#"><img src="./public/IMG/Ico/footer-ico/twitch.png" width="20" alt="logo twitch"></a>
+            <a href="#"><img src="./public/IMG/Ico/footer-ico/twitter-alt.png" width="20" alt="logo twitter"></a>
+        </div>
+    </div>
+        
+        <div class="footer-second">
+            <div class="footer-acerca">
+                <h3>ACERCA DE</h3>
+                <a href="#">Historia de la empresa</a>
+                <a href="#">Empleo</a>
+                <a href="#">Inversores</a>
+                <a href="#">Blog</a>
+                <a href="#">Empresa</a>
+                <a href="#">Contacto</a>
+            </div>
+            <div class="footer-acerca">
+                <h3>VALORES</h3>
+                <a href="#">Impacto social</a>
+                <a href="#">Sustentabilidad</a>
+                <a href="#">Medio ambiente</a>
+            </div>
+            <div class="footer-acerca">
+                <h3>PRODUCTOS</h3>
+                <a href="#">Astro</a>
+                <a href="#">Spot</a>
+                <a href="#">Metalhead</a>
+                <a href="#">Línea hogar</a>
+                <a href="#">T-Series</a>
+                <a href="#">Industrias</a>
+            </div>
+            <div class="footer-acerca">
+                <h3>COMUNIDAD</h3>
+                <a href="#">Contribuir</a>
+                <a href="#">Skynet</a>
+                <a href="#">Developers Hub</a>
+                <a href="#">Blog</a>
+                <a href="#">Partners</a>
+                <a href="#">Documentación</a>
+            </div>
+        </div>
+
+
+    </section>    
+
+    <footer class="bottom-footer">
+        <ul>
+             <li>
+                 <a href="">Términos y Condiciones | </a>
+             </li>
+             <li>
+                 <a href="">Privacidad (actualizada)  | </a>
+             </li>
+             <li>
+                 <a href="">Marcas Comerciales  |  </a>
+             </li>
+             <li>
+                 <a href="">Declaración sobre el trabajo forzoso  | </a>
+             </li>
+             <li>
+                 <a href="">Competencia Justa y Abierta  | </a>
+             </li>
+             <li>
+                 <a href="">Estrategia fiscal  | </a>
+             </li>
+             <li>
+                 <a href="">Política sobre “Cookies”   | </a>
+             </li>
+             <li>
+                 <a href=""></a>
+             </li>
+        </ul>     
+    </footer>
+
+
+
+      <!-- INDEX.JS -->
+      <script src="./src/index.js"></script>
+      <!-- BOOTSTRAP -->
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+

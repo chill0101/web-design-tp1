@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image" href="../../public/IMG/Ico/cyberdyne-logo2.png" />
+    <!-- CSS y BOOTSTRAP 5.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style.css"> <!-- Hoja de estilo externa -->
+    <!--ÍCONOS -->
+    <script src="https://kit.fontawesome.com/0bc8dc8afa.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fontawesome.com/v4.7.0/assets/font-awesome/css/font-awesome.css">
+    <!-- TÍTULO -->
+    <title>CYBERDYNE SYSTEMS S.A.</title>
+</head>
+
+<body class="productos-body">
+    
+     <!-- NAVBAR MOBILE CON TOGGLE -->    
+    <nav class="navbar bg-body-tertiary fixed-top d-md-none toggle-menu ">
+        <div class="container-fluid leftmenu"><!-- Elementos toggle menu por defecto de Bootstrap-->
+            <div class="brand-logo">
+                <a href="/index.html"><img src="../../public/IMG/Ico/cyberdyne-logo2.png" alt="Cyberdine logo" width="60"></a>
+            </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body py-0"> <!--Links a páginas-->
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="/src/pages/productos.html">Productos</a></li>
+                <li><a href="/src/pages/sobre-nosotros.html">Sobre nosotros</a></li>
+              </ul>
+            <div class="nav-icons"> <!-- Botones de login, carrito e idiomas -->
+            <div class="dropdown">
+                <button class="btn data-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="../../public/IMG/Ico/account-ico.png" alt="cuenta" width="20">
+                </button>
+                <!-- Elementos de Dropdown de Bootstrap - íconos hechos en Photoshop-->
+                <ul class="dropdown-menu login-form" aria-labelledby="dropdownMenuButton1">
+                <li><form class="px-4 py-3"><!-- Login por defecto de Bootstrap combinado con Dropdown-->
+                    <div class="mb-3">
+                    <label for="exampleDropdownFormEmail1" class="form-label">Correo electrónico</label>
+                    <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
+                    </div>
+                    <div class="mb-3">
+                    <label for="exampleDropdownFormPassword1" class="form-label">Contraseña</label>
+                    <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
+                    </div>
+                    <div class="mb-3">
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                        <label class="form-check-label" for="dropdownCheck">
+                        Recordarme
+                        </label>
+                    </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary p-1">Iniciar sesión</button>
+                </form>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="registro.html">Registrarse</a>
+                <a class="dropdown-item" href="#">Olvidé mi contraseña</a></li>
+                <li><a class="dropdown-item" href="#">Acceso Partners</a></li>
+                </ul>
+            </div>
+
+
+            <a class="chart" href="#"><img src="../../public/IMG/Ico/cart-ico.png" alt="carrito" width="20"></a><!-- Elemento sin funcionalidad -->
+            <div class="dropdown">
+                <button class="btn data-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="../../public/IMG/Ico/lan-ico.png" alt="lenguaje" width="20">
+                </button>
+                <ul class="dropdown-menu dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                  <li><a class="dropdown-item active" href="#">English</a></li>
+                  <li><a class="dropdown-item" href="#">Español</a></li>
+                  <li><a class="dropdown-item" href="#">中文</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Más Idiomas</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </nav>
+
+      <!-- NAVBAR DESKTOP SENCILLA -->      
+    <header class="header transparent">
+        <div class="brand-logo">
+            <a href="/index.html"><img src="../../public/IMG/Ico/cyberdyne-logo2.png" alt="Cyberdine logo" width="60"></a>
+        </div>
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="/src/pages/productos.html">Productos</a></li>
+                <li><a href="/src/pages/sobre-nosotros.html">Sobre nosotros</a></li>
+            </ul>
+        </nav>
+
+
+        <!-- Botones de login, carrito e idiomas -->
+        <div class="nav-icons"> 
+            <div class="dropdown">
+                <button class="btn data-toggle" type="button" id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="../../public/IMG/Ico/account-ico.png" alt="cuenta" width="20">
+                </button>
+                
+                <ul class="dropdown-menu login-form" aria-labelledby="dropdownMenuButton3">
+                <li><form class="px-4 py-3">
+                    <div class="mb-3">
+                    <label for="exampleDropdownFormEmail2" class="form-label">Correo electrónico</label>
+                    <input type="email" class="form-control" id="exampleDropdownFormEmail2" placeholder="email@example.com">
+                    </div>
+                    <div class="mb-3">
+                    <label for="exampleDropdownFormPassword2" class="form-label">Contraseña</label>
+                    <input type="password" class="form-control" id="exampleDropdownFormPassword2" placeholder="Password">
+                    </div>
+                    <div class="mb-3">
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="dropdownCheck2">
+                        <label class="form-check-label" for="dropdownCheck2">
+                        Recordarme
+                        </label>
+                    </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary p-1">Iniciar sesión</button>
+                </form>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="registro.html">Registrarse</a>
+                <a class="dropdown-item" href="#">Olvidé mi contraseña</a></li>
+                <li><a class="dropdown-item" href="#">Acceso Partners</a></li>
+                </ul>
+            </div>
+
+
+            <a class="chart" href="#"><img src="../../public/IMG/Ico/cart-ico.png" alt="carrito" width="20"></a>
+            <div class="dropdown">
+                <button class="btn data-toggle" type="button" id="dropdownMenuButton4" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="../../public/IMG/Ico/lan-ico.png" alt="lenguaje" width="20">
+                </button>
+                <ul class="dropdown-menu dropdown-menu" aria-labelledby="dropdownMenuButton4">
+                  <li><a class="dropdown-item active" href="#">English</a></li>
+                  <li><a class="dropdown-item" href="#">Español</a></li>
+                  <li><a class="dropdown-item" href="#">中文</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Más Idiomas</a></li>
+                </ul>
+              </div>
+
+        </div>
+    </header>
+
+<!-- BANNER GRID HECHO CON IMÁGENES-->
+<!-- Se utiliza CSS Grid para la creación del banner y en Mobile se ajusta la imagen -->
+<main class="banner-masonry">
+    <div class="gridito1">
+        <div class="gridito1-row1">
+            <img class="griditoimg" src="https://res.cloudinary.com/dl0ek5fh6/image/upload/v1740257176/robots/IMG/SOPORTE/ruwizrbfyf4gej3whvkh.webp" alt="Persona analizando problemas en monitor">
+        </div>
+        <div class="gridito1-row2">
+            <div class="gridito1-row2-col1">
+                <img class="griditoimg" src="https://res.cloudinary.com/dl0ek5fh6/image/upload/v1740257181/robots/IMG/SOPORTE/pjc6nu0qomv9ngz5egb2.png" alt="robot cubico hogar en modo oculto">
+            </div>
+            <div class="gridito1-row2-col2"> 
+                <img class="griditoimg" src="https://res.cloudinary.com/dl0ek5fh6/image/upload/v1740257183/robots/IMG/SOPORTE/sogpbf3nwmxxplnwrgg3.webp" alt="spot en el suelo arreglando">
+            </div>
+        </div>
+    </div>
+    <div class="gridito2">
+        <div class="gridito2-row1">
+            <div class="gridito2-row1-col1">
+                <img class="griditoimg1" src="https://res.cloudinary.com/dl0ek5fh6/image/upload/v1740257176/robots/IMG/SOPORTE/cck7rzc5fyc8zh0zxxfm.png" alt="porta celular con conciencia enojado">
+            </div>
+            <div class="gridito2-row1-col2">
+                <img class="griditoimg2" src="https://res.cloudinary.com/dl0ek5fh6/image/upload/v1740257177/robots/IMG/SOPORTE/c5tojoandjg9cyxqvajw.png" alt="Operadora telefónica feliz">
+            </div>
+        </div>
+        <div class="gridito2-row2">
+            <img class="griditoimg" src="https://res.cloudinary.com/dl0ek5fh6/image/upload/v1740257183/robots/IMG/SOPORTE/szt9ibb09h64uhayadaa.jpg" alt="Persona arreglando brazo robot">
+        </div>
+    </div>
+    <div class="gridito3">
+        <div class="gridito3-col1">
+            <div class="gridito3-col1-row1">
+                <img class="griditoimg1" src="https://res.cloudinary.com/dl0ek5fh6/image/upload/v1740257178/robots/IMG/SOPORTE/x259hnz3bgzzkciyojst.png" alt="Técnico analizando muestra">
+            </div>
+            <div class="gridito3-col1-row2">
+                <img class="griditoimg2" src="https://res.cloudinary.com/dl0ek5fh6/image/upload/v1740257177/robots/IMG/SOPORTE/sokeodo8ilaqlizdjixd.png" alt="Astro mirando hacia arriba">
+            </div>
+        </div>
+        <div class="gridito3-col2">
+            <img class="griditoimg" src="https://res.cloudinary.com/dl0ek5fh6/image/upload/v1740257178/robots/IMG/SOPORTE/bjffwv5lr4wrpo6whuhf.png" alt="Persona arreglando cámara">
+        </div>
+    </div>
+</main>
+
+
+
+
+<!-- BANNER CON BARRA DE BÚSQUEDA -->
+<!-- Se usa el elemento form de Bootstrap -->
+<section class="searchbar-supp">
+    <h2>
+        ESTAMOS PARA AYUDARTE
+    </h2>
+    <p>Nuestro equipo de soporte está disponible las 24 horas, los 365 días del año.</p>
+    <form class="d-flex searchbar-supp-bar">
+        <input class="form-control control-supp me-2" type="search" placeholder="ASTRO V3.2 MANUAL DE USUARIO" aria-label="Search">
+        <button class="btn btn-dark" type="submit">Buscar</button>
+    </form>    
+</section>
+
+
+<h2>
+    ENCUENTRA TU PRODUCTO
+</h2>
+
+<!-- CARDS DE SOPORTE -->
+<section class="support-cards">
+    <div class="support-card1">
+        <img src="https://res.cloudinary.com/dl0ek5fh6/image/upload/v1740257174/robots/IMG/SOPORTE/nhsmfahjxl1azs047h5p.png" alt="astro mirando de frente">
+        <h3>ASTRO</h3>
+    </div>
+    <div class="support-card1">
+        <img src="https://res.cloudinary.com/dl0ek5fh6/image/upload/v1740257184/robots/IMG/SOPORTE/mwjyn4xksyxkjujxre0p.png" alt="brazo t-800">
+        <h3>T-SERIES</h3>
+    </div>
+    <div class="support-card1">
+        <img src="https://res.cloudinary.com/dl0ek5fh6/image/upload/v1740257182/robots/IMG/SOPORTE/ntjhc2lgql2cidczba4i.jpg" alt="spot amarillo perro">
+        <h3>SPOT</h3>
+    </div>
+    <div class="support-card2">
+        <img src="https://res.cloudinary.com/dl0ek5fh6/image/upload/v1740257175/robots/IMG/SOPORTE/fzmndydoeuagumw709mk.webp" alt="robot dron volador">
+        <h3>VOLADORES</h3>
+    </div>
+    <div class="support-card2">
+        <img src="https://res.cloudinary.com/dl0ek5fh6/image/upload/v1740203777/robots/IMG/products/jrparchqt8r5wbexptvy.webp" alt="aspiradora robot blanco">
+        <h3>LIMPIEZA</h3>
+    </div>
+    <div class="support-card2">
+        <img src="https://res.cloudinary.com/dl0ek5fh6/image/upload/v1740257175/robots/IMG/SOPORTE/p18refbtwzz1yhko9cpw.webp" alt="robot con garra verde tanque">
+        <h3>OTROS</h3>
+    </div>
+</section>
+
+
+<!-- CARDS DE SOPORTE -->
+<section class="register-download">
+    <div class="rd-card">
+        <img src="https://res.cloudinary.com/dl0ek5fh6/image/upload/v1740257179/robots/IMG/SOPORTE/iktuko7utg4aqjuqyqkq.png" alt="Astro imagen gráfica registro">
+        <div class="text-rd">
+            <h3>REGISTRAR MI ROBOT</h3>
+            <P>Podrás obtener soporte y novedades de forma rápida y sencilla</P>
+        </div>
+        <div class="rd-buttons">
+            <a href="" class="btn btn-dark">CREAR CUENTA</a>
+            <a href="" class="btn btn-outline-dark">INICIAR SESIÓN</a>
+        </div>
+    </div>
+    <div class="rd-card">
+        <img src="https://res.cloudinary.com/dl0ek5fh6/image/upload/v1740257184/robots/IMG/SOPORTE/qngdlgtpt65kd16wtg4r.png" alt="Astro imagen gráfica descarga">
+        <div class="text-rd"><h3>DESCARGAS</h3><P>Buscar las últimas actualizaciones y software para tu producto</P>
+        </div>
+        <div class="rd-buttons">
+            <a href="" class="btn btn-dark">BUSCAR DRIVERS</a>
+            <a href="" class="btn btn-outline-dark">DESCARGAR APPS</a>
+        </div>
+    </div>
+
+</section>
+
+
+<!-- SECCIÓN CARDS -->
+<!-- Se utilizan Cards de Bootstrap -->
+<h2>NECESITAS AYUDA?</h2>
+    <section class="channels-cards">
+
+        <div class="channel-card">
+            <img src="https://res.cloudinary.com/dl0ek5fh6/image/upload/v1740257176/robots/IMG/SOPORTE/h0q47vhaonegtasggg50.png" alt="teléfono imagen ilustrada">
+            <h3>TELÉFONO</h3>
+            <p>Números de teléfono y disponibilidad de tu región</p>
+            <div class="rounded-arrow">
+                <a href=" "><i class="fa-solid fa-chevron-right"></i></a>
+            </div>
+
+        </div>
+        <div class="channel-card">
+            <img src="https://res.cloudinary.com/dl0ek5fh6/image/upload/v1740257180/robots/IMG/SOPORTE/zzdpzfniypx8masvi3it.png" alt="Chatear  imagen ilustrada">
+            <h3>CHAT</h3>
+            <p>Soporte utilizando el chat dentro del navegador</p>
+            <div class="rounded-arrow">
+                <a href=" "><i class="fa-solid fa-chevron-right"></i></a>
+            </div>
+        </div>
+        <div class="channel-card">
+            <img src="https://res.cloudinary.com/dl0ek5fh6/image/upload/v1740257181/robots/IMG/SOPORTE/y07ptamwnr9zr76rqlve.png" alt="SkyNet imagen ilustrada">
+            <h3>SKY</h3>
+            <p>Chatea con Sky, siempre te dará una solución </p>
+            <div class="rounded-arrow">
+                <a href=" "><i class="fa-solid fa-chevron-right"></i></a>
+            </div>
+        </div>
+
+
+    </section>    
+
+
+
+
+
+<!-- Newsletter -->
+<!-- Se utiliza el elemento form de Bootstrap -->
+<section class="newsletter">
+    <div class="news-container">
+        <h2>Recibir novedades</h2>
+        <div class="news-form-container">
+            <form class="newsletter-form">
+                <div class="form-group">
+                    <label for="email-newsletter-component" class="visually-hidden">Ingresa tu Mail</label>
+                    <input type="email" class="form-control" id="email-newsletter-component" placeholder="Ingresa tu Mail" aria-label="email-newsletter-component" aria-describedby="email-newsletter-component" required>
+                </div>
+                <div class="btn-container">
+                    <button type="submit" class="btn btn-primary">Suscribirse</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+    
+
+    
+<!--FOOTER-->
+<!-- Se combina Grid y Flex para lograr redistribución Responsive, los links redirecionan al mismo sitio -->  
+<section class="footer">
+    <div class="footer-ro">
+        <div class="logo-footer"><a href="/index.html"><img src="../../public/IMG/Ico/cyberdyne-logo2.png" width="80" alt="cyberdyne logo"></a></div>
+        <div class="footer-social">   
+            <a href="#"><img src="../../public/IMG/Ico/footer-ico/discord.png" width="20" alt="logo discord"></a>
+            <a href="#"><img src="../../public/IMG/Ico/footer-ico/github.png" width="20" alt="logo github"></a>
+            <a href="#"><img src="../../public/IMG/Ico/footer-ico/instagram.png" width="20" alt="logo instagram"></a>
+            <a href="#"><img src="../../public/IMG/Ico/footer-ico/linkedin.png" width="20" alt="logo linkedin"></a>
+            <a href="#"><img src="../../public/IMG/Ico/footer-ico/twitch.png" width="20" alt="logo twitch"></a>
+            <a href="#"><img src="../../public/IMG/Ico/footer-ico/twitter-alt.png" width="20" alt="logo twitter"></a>
+        </div>
+    </div>
+        
+        <div class="footer-second">
+            <div class="footer-acerca">
+                <h3>ACERCA DE</h3>
+                <a href="#">Historia de la empresa</a>
+                <a href="#">Empleo</a>
+                <a href="#">Inversores</a>
+                <a href="#">Blog</a>
+                <a href="#">Empresa</a>
+                <a href="#">Contacto</a>
+            </div>
+            <div class="footer-acerca">
+                <h3>VALORES</h3>
+                <a href="#">Impacto social</a>
+                <a href="#">Sustentabilidad</a>
+                <a href="#">Medio ambiente</a>
+            </div>
+            <div class="footer-acerca">
+                <h3>PRODUCTOS</h3>
+                <a href="#">Astro</a>
+                <a href="#">Spot</a>
+                <a href="#">Metalhead</a>
+                <a href="#">Línea hogar</a>
+                <a href="#">T-Series</a>
+                <a href="#">Industrias</a>
+            </div>
+            <div class="footer-acerca">
+                <h3>COMUNIDAD</h3>
+                <a href="#">Contribuir</a>
+                <a href="#">Skynet</a>
+                <a href="#">Developers Hub</a>
+                <a href="#">Blog</a>
+                <a href="#">Partners</a>
+                <a href="#">Documentación</a>
+            </div>
+        </div>
+
+
+    </section>    
+
+    <footer class="bottom-footer">
+        <ul>
+             <li>
+                 <a href="">Términos y Condiciones | </a>
+             </li>
+             <li>
+                 <a href="">Privacidad (actualizada)  | </a>
+             </li>
+             <li>
+                 <a href="">Marcas Comerciales  |  </a>
+             </li>
+             <li>
+                 <a href="">Declaración sobre el trabajo forzoso  | </a>
+             </li>
+             <li>
+                 <a href="">Competencia Justa y Abierta  | </a>
+             </li>
+             <li>
+                 <a href="">Estrategia fiscal  | </a>
+             </li>
+             <li>
+                 <a href="">Política sobre “Cookies”   | </a>
+             </li>
+             <li>
+                 <a href=""></a>
+             </li>
+        </ul>     
+    </footer>
+
+
+    <!-- INDEX.JS -->
+    <script src="../JS/index.js"></script>
+    <!-- BOOTSTRAP -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+</body>
+</html>
