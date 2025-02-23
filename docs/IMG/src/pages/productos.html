@@ -1,0 +1,1170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image" href="../../public/IMG/Ico/cyberdyne-logo2.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS y BOOTSTRAP 5.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style.css"> <!-- Hoja de estilo externa -->
+    <!--ÍCONOS -->
+    <script src="https://kit.fontawesome.com/0bc8dc8afa.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fontawesome.com/v4.7.0/assets/font-awesome/css/font-awesome.css">
+    <!-- TÍTULO -->
+    <title>CYBERDYNE SYSTEMS S.A.</title>
+</head>
+
+<body class="productos-body">
+
+    <!-- NAVBAR MOBILE CON TOGGLE -->    
+    <nav class="navbar bg-body-tertiary fixed-top d-md-none toggle-menu ">
+        <div class="container-fluid leftmenu"> <!-- Elementos toggle menu por defecto de Bootstrap-->
+            <div class="brand-logo">
+                <a href="/index.html"><img src="../../public/IMG/Ico/cyberdyne-logo2.png" alt="Cyberdine logo" width="60"></a>
+            </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body py-0"> <!--Links a páginas-->
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="/src/pages/sobre-nosotros.html">Sobre nosotros</a></li>
+                <li><a href="/src/pages/asistencia.html">Asistencia</a></li>
+              </ul>
+            <div class="nav-icons"> <!-- Botones de login, carrito e idiomas -->
+            <div class="dropdown">
+                <button class="btn data-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="../../public/IMG/Ico/account-ico.png" alt="cuenta" width="20">
+                </button>
+                <!-- Elementos de Dropdown de Bootstrap - íconos hechos en Photoshop-->
+                <ul class="dropdown-menu login-form" aria-labelledby="dropdownMenuButton1">
+                <li><form class="px-4 py-3"> <!-- Login por defecto de Bootstrap combinado con Dropdown-->
+                    <div class="mb-3">
+                    <label for="exampleDropdownFormEmail1" class="form-label">Correo electrónico</label>
+                    <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
+                    </div>
+                    <div class="mb-3">
+                    <label for="exampleDropdownFormPassword1" class="form-label">Contraseña</label>
+                    <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
+                    </div>
+                    <div class="mb-3">
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                        <label class="form-check-label" for="dropdownCheck">
+                        Recordarme
+                        </label>
+                    </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary p-1">Iniciar sesión</button>
+                </form>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="registro.html">Registrarse</a>
+                <a class="dropdown-item" href="#">Olvidé mi contraseña</a></li>
+                <li><a class="dropdown-item" href="#">Acceso Partners</a></li>
+                </ul>
+            </div>         
+                <a class="chart" href="#"><img src="../../public/IMG/Ico/cart-ico.png" alt="carrito" width="20"></a> <!-- Elemento sin funcionalidad -->
+            <div class="dropdown">
+                <button class="btn data-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="../../public/IMG/Ico/lan-ico.png" alt="lenguaje" width="20">
+                </button>
+                <ul class="dropdown-menu dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                  <li><a class="dropdown-item active" href="#">English</a></li>
+                  <li><a class="dropdown-item" href="#">Español</a></li>
+                  <li><a class="dropdown-item" href="#">中文</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Más Idiomas</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </nav>
+
+<!-- NAVBAR DESKTOP SENCILLA -->      
+    <header class="header transparent">
+        <div class="brand-logo">
+            <a href="/index.html"><img src="../../public/IMG/Ico/cyberdyne-logo2.png" alt="Cyberdine logo" width="60"></a>
+        </div>
+        <nav class="navbar">
+            <ul class="nav-links"> <!-- Links a páginas -->
+                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="/src/pages/sobre-nosotros.html">Sobre nosotros</a></li>
+                <li><a href="/src/pages/asistencia.html">Asistencia</a></li>
+            </ul>
+        </nav>
+
+
+        <!-- Botones de login, carrito e idiomas -->
+        <div class="nav-icons"> 
+            <div class="dropdown">
+                <button class="btn data-toggle" type="button" id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="../../public/IMG/Ico/account-ico.png" alt="cuenta" width="20">
+                </button>
+                
+                <ul class="dropdown-menu login-form" aria-labelledby="dropdownMenuButton3">
+                <li><form class="px-4 py-3">
+                    <div class="mb-3">
+                    <label for="exampleDropdownFormEmail2" class="form-label">Correo electrónico</label>
+                    <input type="email" class="form-control" id="exampleDropdownFormEmail2" placeholder="email@example.com">
+                    </div>
+                    <div class="mb-3">
+                    <label for="exampleDropdownFormPassword2" class="form-label">Contraseña</label>
+                    <input type="password" class="form-control" id="exampleDropdownFormPassword2" placeholder="Password">
+                    </div>
+                    <div class="mb-3">
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="dropdownCheck2">
+                        <label class="form-check-label" for="dropdownCheck2">
+                        Recordarme
+                        </label>
+                    </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary p-1">Iniciar sesión</button>
+                </form>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="registro.html">Registrarse</a>
+                <a class="dropdown-item" href="#">Olvidé mi contraseña</a></li>
+                <li><a class="dropdown-item" href="#">Acceso Partners</a></li>
+                </ul>
+            </div>
+
+
+            <a class="chart" href="#"><img src="../../public/IMG/Ico/cart-ico.png" alt="carrito" width="20"></a>
+            <div class="dropdown">
+                <button class="btn data-toggle" type="button" id="dropdownMenuButton4" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="../../public/IMG/Ico/lan-ico.png" alt="lenguaje" width="20">
+                </button>
+                <ul class="dropdown-menu dropdown-menu" aria-labelledby="dropdownMenuButton4">
+                  <li><a class="dropdown-item active" href="#">English</a></li>
+                  <li><a class="dropdown-item" href="#">Español</a></li>
+                  <li><a class="dropdown-item" href="#">中文</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Más Idiomas</a></li>
+                </ul>
+              </div>
+
+        </div>
+    </header>
+
+<!-- MAIN CON BANNER - Imagen de fondo en CSS realizada con Photoshop -->
+    <main class="banner-productos">
+        <div class="hero-productos"><h2>ROBOTS DEL <br> MUNDO REAL</h2></div>
+    </main>
+
+
+<!-- FILTROS SE COMBINAN ELEMENTOS DE BOOTSTRAP CON CSS -->
+<!-- Se combinan elementos para hacer desplegables -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasFilters" aria-labelledby="offcanvasFiltersLabel">
+    <div class="offcanvas-header"> 
+        <h5 class="offcanvas-title" id="offcanvasFiltersLabel">Filtros</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div> 
+    <div class="offcanvas-body">
+        <aside class="d-md-none">
+            <article class="filter-group">
+                <header class="toggle-filters">
+                    <a href="#" data-toggle="collapse" data-target="#collapse_1" aria-expanded="true">
+                        <h6 class="title">Categoría de producto</h6>
+                        <i class="icon-control fa fa-chevron-down"></i>
+                    </a>
+                </header>
+                <div class="filter-content collapse" id="collapse_1"> <!-- Primer filtro de tipo lista, se accede directamente a la categoría -->
+                    <div class="list-container">
+                        <ul class="list-menu">
+                            <li><a href="#">Hogar</a></li>
+                            <li><a href="#">Seguridad</a></li>
+                            <li><a href="#">Voladores</a></li>
+                            <li><a href="#">Utilitarios</a></li>
+                            <li><a href="#">Industria</a></li>
+                            <li><a href="#">Compañeros</a></li>
+                            <li><a href="#"><u>Ver más</u></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+
+            <article class="filter-group"> 
+                <header class="toggle-filters">
+                    <a href="#" data-toggle="collapse" data-target="#collapse_21" aria-expanded="true"> <!-- Segundo filtro con check para seleccionar varios -->
+                        <h6 class="title">Fabricantes</h6>
+                        <i class="icon-control fa fa-chevron-down"></i>
+                    </a>
+                </header>
+                <div class="filter-content collapse" id="collapse_21">
+                    <div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="bostonDynamics2" checked>
+                            <label class="form-check-label" for="bostonDynamics2">Boston Dynamics</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="cyberDyne2" checked>
+                            <label class="form-check-label" for="cyberDyne2">CyberDyne</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="whiteBear2" checked>
+                            <label class="form-check-label" for="whiteBear2">White Bear</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="turin2" checked>
+                            <label class="form-check-label" for="turin2">Turin</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="verMas4">
+                            <label class="form-check-label" for="verMas4"><u>Ver más</u></label>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="filter-group">
+                <header class="toggle-filters">
+                    <a href="#" data-toggle="collapse" data-target="#collapse3_3" aria-expanded="true"> <!-- Tercer filtro con check para seleccionar varios -->
+                        <h6 class="title">Propiedades</h6>
+                        <i class="icon-control fa fa-chevron-down"></i>
+                    </a>
+                </header>
+                <div class="filter-content collapse" id="collapse3_3">
+                    <div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="Autoaprendizaje" checked>
+                            <label class="form-check-label" for="Autoaprendizaje">Autoaprendizaje</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="nadar">
+                            <label class="form-check-label" for="nadar">Puede nadar</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="volar">
+                            <label class="form-check-label" for="volar">Puede volar</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="IoT">
+                            <label class="form-check-label" for="IoT">Conectividad IoT</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="SkyNET">
+                            <label class="form-check-label" for="SkyNET"><u>Conexión SkyNET</u></label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="Autodestrucción">
+                            <label class="form-check-label" for="Autodestrucción"><u>Autodestrucción</u></label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="Portavasos">
+                            <label class="form-check-label" for="Portavasos">Portavasos</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="verMas3">
+                            <label class="form-check-label" for="verMas3"><u>Ver más</u></label>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="filter-group">
+                <header class="toggle-filters">
+                    <a href="#" data-toggle="collapse" data-target="#collapse_4" aria-expanded="true">
+                        <h6 class="title">Rango de Precio</h6>
+                        <i class="icon-control fa fa-chevron-down"></i>
+                    </a>
+                </header> 
+                <div class="ranges"></div>
+                <div class="filter-content collapse" id="collapse_4"> <!-- Cuarto filtro con rango de precio de rangos tipo lista y con rangos personalizados mediante input -->
+                    <div class="list-container">
+                        <ul class="list-menu">
+                            <li><a href="#">Hasta $100.000</a></li>
+                            <li><a href="#">$100.000 a $600.000</a></li>
+                            <li><a href="#">Desde $600.000</a></li>
+                        </ul>
+                    </div>
+                    <div class="pricing-filter">
+                        <div class="d-flex">
+                            <div class="form-group">
+                                <label>Min</label>
+                                <input class="form-control" placeholder="$0" type="number">
+                            </div>
+                            <div class="form-group">
+                                <label>Max</label>
+                                <input class="form-control" placeholder="$1.000.000" type="number">
+                            </div>
+                        </div>
+                        <div class="buttn-price">
+                            <button class="btn btn-block btn-primary apply-btn">Aplicar</button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="filter-group">
+                <header class="toggle-filters">
+                    <a href="#" data-toggle="collapse" data-target="#collapse5_5" aria-expanded="true"> <!-- Quinto filtro con check para seleccionar varios, se estilan con CSS para generar efecto de scalado y colores -->
+                        <h6 class="title">Colores</h6>
+                        <i class="icon-control fa fa-chevron-down"></i>
+                    </a>
+                </header>
+                <div class="filter-content collapse" id="collapse5_5">
+                    <ul class="colors-filter">
+                        <li>
+                            <label class="checkbox-btn">
+                                <input type="checkbox" id="color-yellow">
+                                <span class="btn color color-yellow"></span>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="checkbox-btn">
+                                <input type="checkbox" id="color-black">
+                                <span class="btn color color-black"></span>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="checkbox-btn">
+                                <input type="checkbox" id="color-grey">
+                                <span class="btn color color-grey"></span>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="checkbox-btn">
+                                <input type="checkbox" id="color-lightblue">
+                                <span class="btn color color-lightblue"></span>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="checkbox-btn">
+                                <input type="checkbox" id="color-orange">
+                                <span class="btn color color-orange"></span>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="checkbox-btn">
+                                <input type="checkbox" id="color-red">
+                                <span class="btn color color-red"></span>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="checkbox-btn">
+                                <input type="checkbox" id="color-white">
+                                <span class="btn color color-white"></span>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="checkbox-btn">
+                                <input type="checkbox" id="color-pink">
+                                <span class="btn color color-pink"></span>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="checkbox-btn">
+                                <input type="checkbox" id="color-green">
+                                <span class="btn color color-green"></span>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="checkbox-btn">
+                                <input type="checkbox" id="color-multi">
+                                <span class="btn color color-multi"></span>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+
+            <article class="filter-group">
+                <header class="toggle-filters">
+                    <a href="#" data-toggle="collapse" data-target="#collapse6_6" aria-expanded="false"> <!-- Sexto filtro con Check único -->
+                        <h6 class="title">MÁS FILTROS</h6>
+                        <i class="icon-control fa fa-chevron-down"></i>
+                    </a>
+                </header>
+                <div class="filter-content collapse" id="collapse6_6">
+                    <div class="filter-more">
+                        <label class="custom-control custom-radio">
+                            <input type="radio" name="myfilter_radio" checked class="custom-control-input">
+                            Más vendidos
+                        </label>
+                        <label class="custom-control custom-radio">
+                            <input type="radio" name="myfilter_radio" class="custom-control-input">
+                            Línea ASTRO
+                        </label>
+                        <label class="custom-control custom-radio">
+                            <input type="radio" name="myfilter_radio" class="custom-control-input">
+                            Línea SPOT
+                        </label>
+                        <label class="custom-control custom-radio">
+                            <input type="radio" name="myfilter_radio" class="custom-control-input">
+                            Tácticos
+                        </label>
+                    </div>
+                </div>
+            </article>
+        </aside>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+<!-- FILTROS VERSIÓN MOBILE -->
+<!-- SE REPOSICIONA CON CSS EN VERSIÓN MOBILE POR ENCIMA DE LA NAVEGACIÓN DE PRODUCTOS PARA MEJOR ACCESIBILIDAD -->
+<div class="container all-filters ">
+	<div class="row">
+        <aside class="col-md-3 hidden-mobile">
+            <div class="hidden-mobile">
+                <article class="filter-group">
+                    <header class="toggle-filters">
+                        <a href="#" data-toggle="collapse" data-target="#collapse_2" aria-expanded="true">
+                            
+                            <h6 class="title">Categoría de producto</h6>
+                            <i class="icon-control fa fa-chevron-down"></i>
+                        </a>
+                    </header>
+                    <div class="filter-content collapse" id="collapse_2">
+                        <div class="list-container">
+                            <ul class="list-menu">
+                                <li><a href="#">Hogar</a></li>
+                                <li><a href="#">Seguridad</a></li>
+                                <li><a href="#">Voladores</a></li>
+                                <li><a href="#">Utilitarios</a></li>
+                                <li><a href="#">Industria</a></li>
+                                <li><a href="#">Compañeros</a></li>
+                                <li><a href="#"><u>Ver más</u></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+
+
+
+                <article class="filter-group">
+                    <header class="toggle-filters">
+                        <a href="#" data-toggle="collapse" data-target="#collapse2_2" aria-expanded="true">
+                            
+                            <h6 class="title">Fabricantes</h6>
+                            <i class="icon-control fa fa-chevron-down"></i>
+                        </a>
+                    </header>
+                    <div class="filter-content collapse" id="collapse2_2">
+                        <div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="bostonDynamics3" checked>
+                                <label class="form-check-label" for="bostonDynamics3">Boston Dynamics</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="cyberDyne" checked>
+                                <label class="form-check-label" for="cyberDyne">CyberDyne</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="whiteBear" checked>
+                                <label class="form-check-label" for="whiteBear">White Bear</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="turin" checked>
+                                <label class="form-check-label" for="turin">Turin</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="verMas">
+                                <label class="form-check-label" for="verMas"><u>Ver más</u></label>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="filter-group">
+                    <header class="toggle-filters">
+                        <a href="#" data-toggle="collapse" data-target="#collapse_3" aria-expanded="true">
+                           
+                            <h6 class="title">Propiedades</h6>
+                            <i class="icon-control fa fa-chevron-down"></i>
+                        </a>
+                    </header>
+                    <div class="filter-content collapse" id="collapse_3">
+                        <div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="Autoaprendizaje2" checked>
+                                <label class="form-check-label" for="Autoaprendizaje2">Autoaprendizaje</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="nadar2">
+                                <label class="form-check-label" for="nadar">Puede nadar</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="volar2">
+                                <label class="form-check-label" for="volar2">Puede volar</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="IoT2">
+                                <label class="form-check-label" for="IoT2">Conectividad IoT</label>
+                            </div>
+    
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="SkyNET2">
+                                <label class="form-check-label" for="SkyNET2">Conexión SkyNET</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="Autodestruccion2">
+                                <label class="form-check-label" for="Autodestruccion2">Autodestrucción</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="Portavasos2">
+                                <label class="form-check-label" for="Portavasos2">Portavasos></label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="verMas2">
+                                <label class="form-check-label" for="verMas2"><u>Ver más</u></label>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="filter-group">
+                    <header class="toggle-filters">
+                        <a href="#" data-toggle="collapse" data-target="#collapse4_4" aria-expanded="true">
+                            
+                            <h6 class="title">Rango de Precio</h6>
+                            <i class="icon-control fa fa-chevron-down"></i>
+                        </a>
+                    </header>
+                    <div class="ranges">
+                        
+                    </div>
+                    <div class="filter-content collapse" id="collapse4_4">
+                        <div class="list-container">
+                            <ul class="list-menu">
+                                <li><a href="#">Hasta $100.000</a></li>
+                                <li><a href="#">$100.000 a $600.000</a></li>
+                                <li><a href="#">Desde $600.000</a></li>
+                            </ul>
+                        </div>
+                        <div class="pricing-filter">
+                            <div class="d-flex ">
+                                <div class="form-group">
+                                    <label>Min</label>
+                                    <input class="form-control" placeholder="$0" type="number">
+                                </div>
+                                <div class="form-group">
+                                    <label>Max</label>
+                                    <input class="form-control" placeholder="$1.000.000" type="number">
+                                </div>
+                            </div>
+                            <div class="buttn-price">
+                                <button class="btn btn-block btn-primary apply-btn">Aplicar</button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="filter-group">
+                    <header class="toggle-filters">
+                        <a href="#" data-toggle="collapse" data-target="#collapse_5" aria-expanded="true">
+                            
+                            <h6 class="title">Colores</h6>
+                            <i class="icon-control fa fa-chevron-down"></i>
+                        </a>
+                    </header>
+                    <div class="filter-content collapse" id="collapse_5">
+                        <ul class="colors-filter">
+                            <li>
+                                <label class="checkbox-btn">
+                                    <input type="checkbox" id="color-yellow2">
+                                    <span class="btn color color-yellow"></span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="checkbox-btn">
+                                    <input type="checkbox" id="color-black2">
+                                    <span class="btn color color-black"></span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="checkbox-btn">
+                                    <input type="checkbox" id="color-grey2">
+                                    <span class="btn color color-grey"></span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="checkbox-btn">
+                                    <input type="checkbox" id="color-lightblue2">
+                                    <span class="btn color color-lightblue"></span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="checkbox-btn">
+                                    <input type="checkbox" id="color-orange2">
+                                    <span class="btn color color-orange"></span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="checkbox-btn">
+                                    <input type="checkbox" id="color-red2">
+                                    <span class="btn color color-red"></span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="checkbox-btn">
+                                    <input type="checkbox" id="color-white2">
+                                    <span class="btn color color-white"></span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="checkbox-btn">
+                                    <input type="checkbox" id="color-pink2">
+                                    <span class="btn color color-pink"></span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="checkbox-btn">
+                                    <input type="checkbox" id="color-green2">
+                                    <span class="btn color color-green"></span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="checkbox-btn">
+                                    <input type="checkbox" id="color-multi2">
+                                    <span class="btn color color-multi"></span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="filter-group">
+                    <header class="toggle-filters">
+                        <a href="#" data-toggle="collapse" data-target="#collapse_6" aria-expanded="false">
+                            
+                            <h6 class="title">MÁS FILTROS</h6>
+                            <i class="icon-control fa fa-chevron-down"></i>
+                        </a>
+                    </header>
+                    <div class="filter-content collapse" id="collapse_6">
+                        <div class="filter-more">
+                            <label class="custom-control custom-radio">
+                                <input type="radio" name="myfilter_radio" checked="" class="custom-control-input">
+                                Más vendidos
+                            </label>
+                            <label class="custom-control custom-radio">
+                                    <input type="radio" name="myfilter_radio" class="custom-control-input">
+                              Línea ASTRO
+                            </label>
+                            <label class="custom-control custom-radio">
+                                <input type="radio" name="myfilter_radio" class="custom-control-input">
+                              Línea SPOT
+                            </label>
+                            <label class="custom-control custom-radio">
+                                <input type="radio" name="myfilter_radio" class="custom-control-input">
+                                Tácticos
+                            </label>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </aside>
+
+<!-- DESPLEGABLE DE FILTROS PARA VERSIÓN MOBILE, A PARTIR DE LA RESOLUCIÓN MD DESAPARECE PARA DEJAR EL ASIDE A LA IZQUIERDA -->
+	<div class="col-md-9">
+            <div class="mobile-bttn d-md-none">
+                <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasFilters" aria-controls="offcanvasFilters">
+                    Filtros
+                    <i class="icon-control fa fa-chevron-down"></i>
+                </button>
+            </div>
+            
+
+    <!-- SECCIÓN INFO, ORDENAMIENTO Y VISTA -->
+            <header class="order-section border-bottom mb-4">
+                <div class="form-inline order-form">
+                    <span class="items-found">12 Items found </span>
+                    <span class="order-by">ORDENAR POR: </span>
+                    <select class="form-control order-form-control selector-order">
+                        <option>Precio más bajo</option>
+                        <option>Precio más alto</option>
+                        <option>Relevancia</option>
+                        <option>Más vendidos</option>
+                    </select>
+                    <div class="btn-group">
+                        <a href="#" class="btn btn-outline-dark" data-toggle="tooltip" title="" data-original-title="List view"> 
+                            <i class="fa fa-bars"></i></a>
+                        <a href="#" class="btn  btn-outline-dark active" data-toggle="tooltip" title="" data-original-title="Grid view"> 
+                            <i class="fa fa-th"></i></a>
+                    </div>
+                </div>
+        </header>
+
+
+
+
+
+    <!-- PRODUCTOS EN GRID -->
+    <!-- SE UTILIZAN CARDS DE BOOTSTRAP -->
+    <div class="productos-columns">
+        <div class="card producto-1">
+            <div class="img-frame">
+                <img class="card-img-top" src="https://res.cloudinary.com/dl0ek5fh6/image/upload/v1740203782/robots/IMG/products/r96jtfpkmqqtaxrvgr01.jpg" alt="robot riley camara patrulla">    
+            </div>
+            
+            <div class="card-body p-0 m-1">
+                <div class="card-text">
+                    <h5 class="card-title">Riley</h5> 
+                    <p>Lorem ipsum</p>
+                </div>
+                <div class="card-price">
+                    <div class="price">
+                        $200.000
+                    </div>
+                </div>
+                <div class="bton-prod">
+                    <a href="#" class="btn btn-primary btn-sm">Agregar al carrito</a>
+                </div>
+            </div>
+        </div>
+        <div class="card producto-1">
+            <div class="img-frame">
+                <img class="card-img-top" src="https://res.cloudinary.com/dl0ek5fh6/image/upload/v1740203776/robots/IMG/products/cea6ohkqjlaydl3fe6rl.jpg" alt="robot perro compañía chicos">    
+            </div>
+            
+            <div class="card-body p-0 m-1">
+                <div class="card-text">
+                    <h5 class="card-title">Aiboo</h5> 
+                    <p>Lorem ipsum</p>
+                </div>
+                <div class="card-price">
+                    <div class="price">
+                        $200.000
+                    </div>
+                </div>
+                <div class="bton-prod">
+                    <a href="#" class="btn btn-primary btn-sm">Agregar al carrito</a>
+                </div>
+            </div>
+        </div>
+        <div class="card producto-1">
+            <div class="img-frame">
+                <img class="card-img-top" src="https://res.cloudinary.com/dl0ek5fh6/image/upload/v1740203777/robots/IMG/products/jrparchqt8r5wbexptvy.webp" alt="robot aspiradora blanco">    
+            </div>
+            
+            <div class="card-body p-0 m-1">
+                <div class="card-text">
+                    <h5 class="card-title">CYD-4E</h5> 
+                    <p>Lorem ipsum</p>
+                </div>
+                <div class="card-price">
+                    <div class="price">
+                        $200.000
+                    </div>
+                </div>
+                <div class="bton-prod">
+                    <a href="#" class="btn btn-primary btn-sm">Agregar al carrito</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card producto-1">
+            <div class="img-frame">
+                <img class="card-img-top" src="https://res.cloudinary.com/dl0ek5fh6/image/upload/v1740203779/robots/IMG/products/rfxgyczcygahf18y2gy6.jpg" alt="robot centinela defensa casa">    
+            </div>
+            
+            <div class="card-body p-0 m-1">
+                <div class="card-text">
+                    <h5 class="card-title">Sentry</h5> 
+                    <p>Lorem ipsum</p>
+                </div>
+                <div class="card-price">
+                    <div class="price">
+                        $200.000
+                    </div>
+                </div>
+                <div class="bton-prod">
+                    <a href="#" class="btn btn-primary btn-sm">Agregar al carrito</a>
+                </div>
+            </div>
+        </div>
+        <div class="card producto-1">
+            <div class="img-frame">
+                <img class="card-img-top" src="https://res.cloudinary.com/dl0ek5fh6/image/upload/v1740203777/robots/IMG/products/mz3cslaosnxv63hnedht.jpg" alt="robot clickbot programable blanco">    
+            </div>
+            
+            <div class="card-body p-0 m-1">
+                <div class="card-text">
+                    <h5 class="card-title">ClickBot</h5> 
+                    <p>Lorem ipsum</p>
+                </div>
+                <div class="card-price">
+                    <div class="price">
+                        $200.000
+                    </div>
+                </div>
+                <div class="bton-prod">
+                    <a href="#" class="btn btn-primary btn-sm">Agregar al carrito</a>
+                </div>
+            </div>
+        </div>
+        <div class="card producto-1">
+            <div class="img-frame">
+                <img class="card-img-top" src="https://res.cloudinary.com/dl0ek5fh6/image/upload/v1740203782/robots/IMG/products/c99mphgymsujtjwhvw4h.jpg" alt="robot araña">    
+            </div>
+            
+            <div class="card-body p-0 m-1">
+                <div class="card-text">
+                    <h5 class="card-title">Miles</h5> 
+                    <p>Lorem ipsum</p>
+                </div>
+                <div class="card-price">
+                    <div class="price">
+                        $200.000
+                    </div>
+                </div>
+                <div class="bton-prod">
+                    <a href="#" class="btn btn-primary btn-sm">Agregar al carrito</a>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="card producto-1">
+            <div class="img-frame">
+                <img class="card-img-top" src="https://res.cloudinary.com/dl0ek5fh6/image/upload/v1740203781/robots/IMG/products/ovquztlklkth8upmlpkf.jpg" alt="robot drone gris camara zoom x1000">    
+            </div>
+            
+            <div class="card-body p-0 m-1">
+                <div class="card-text">
+                    <h5 class="card-title">Crow</h5> 
+                    <p>Lorem ipsum</p>
+                </div>
+                <div class="card-price">
+                    <div class="price">
+                        $200.000
+                    </div>
+                </div>
+                <div class="bton-prod">
+                    <a href="#" class="btn btn-primary btn-sm">Agregar al carrito</a>
+                </div>
+            </div>
+        </div>
+        <div class="card producto-1">
+            <div class="img-frame">
+                <img class="card-img-top" src="https://res.cloudinary.com/dl0ek5fh6/image/upload/v1740203778/robots/IMG/products/bjzekt2mv6b6v51f7pkp.jpg" alt="robot">    
+            </div>
+            
+            <div class="card-body p-0 m-1">
+                <div class="card-text">
+                    <h5 class="card-title">KAA</h5> 
+                    <p>Lorem ipsum</p>
+                </div>
+                <div class="card-price">
+                    <div class="price">
+                        $200.000
+                    </div>
+                </div>
+                <div class="bton-prod">
+                    <a href="#" class="btn btn-primary btn-sm">Agregar al carrito</a>
+                </div>
+            </div>
+        </div>
+        <div class="card producto-1">
+            <div class="img-frame">
+                <img class="card-img-top" src="https://res.cloudinary.com/dl0ek5fh6/image/upload/v1740203778/robots/IMG/products/upsoyej4tvpx0u4bupzd.jpg" alt="robot drone Hedwig">    
+            </div>
+            
+            <div class="card-body p-0 m-1">
+                <div class="card-text">
+                    <h5 class="card-title">Hedwig</h5> 
+                    <p>Lorem ipsum</p>
+                </div>
+                <div class="card-price">
+                    <div class="price">
+                        $200.000
+                    </div>
+                </div>
+                <div class="bton-prod">
+                    <a href="#" class="btn btn-primary btn-sm">Agregar al carrito</a>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="card producto-1">
+            <div class="img-frame">
+                <img class="card-img-top" src="https://res.cloudinary.com/dl0ek5fh6/image/upload/v1740203777/robots/IMG/products/qjjrkxk7qis5nksddbhr.jpg" alt="robot saludando blanco">    
+            </div>
+            
+            <div class="card-body p-0 m-1">
+                <div class="card-text">
+                    <h5 class="card-title">Eilik</h5> 
+                    <p>Lorem ipsum</p>
+                </div>
+                <div class="card-price">
+                    <div class="price">
+                        $200.000
+                    </div>
+                </div>
+                <div class="bton-prod">
+                    <a href="#" class="btn btn-primary btn-sm">Agregar al carrito</a>
+                </div>
+            </div>
+        </div>
+        <div class="card producto-1">
+            <div class="img-frame">
+                <img class="card-img-top" src="https://res.cloudinary.com/dl0ek5fh6/image/upload/v1740203777/robots/IMG/products/fdvn6f3pczchw3gibjax.jpg" alt="robot verde urbot garra saludo familia">    
+            </div>
+            
+            <div class="card-body p-0 m-1">
+                <div class="card-text">
+                    <h5 class="card-title">Urbot</h5> 
+                    <p>Lorem ipsum</p>
+                </div>
+                <div class="card-price">
+                    <div class="price">
+                        $200.000
+                    </div>
+                </div>
+                <div class="bton-prod">
+                    <a href="#" class="btn btn-primary btn-sm">Agregar al carrito</a>
+                </div>
+            </div>
+        </div>
+        <div class="card producto-1">
+            <div class="img-frame">
+                <img class="card-img-top" src="https://res.cloudinary.com/dl0ek5fh6/image/upload/v1740203782/robots/IMG/products/r7nbvrlv67sjke0cydn6.png" alt="droideka producto bordo bolita">    
+            </div>
+            
+            <div class="card-body p-0 m-1">
+                <div class="card-text">
+                    <h5 class="card-title">Droi-DK</h5> 
+                    <p>Lorem ipsum</p>
+                </div>
+                <div class="card-price">
+                    <div class="price">
+                        $200.000
+                    </div>
+                </div>
+                <div class="bton-prod">
+                    <a href="#" class="btn btn-primary btn-sm">Agregar al carrito</a>
+                </div>
+            </div>
+        </div>
+    </div>            
+
+    <nav class="mt-4" aria-label="Page navigation sample">
+        <ul class="pagination">
+        <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
+        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+        </ul>
+    </nav>
+    
+
+</div>
+    </div>
+</div>
+
+
+   <!-- SLIDER GRID DE  BOOTSTRAP -->
+   <!-- Imágenes alojadas en Github para acceder desde web. Se utiliza el elemento carrousel -->
+   <div id="carouselgrid" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselgrid" data-bs-slide-to="0" class="active d-none" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselgrid" data-bs-slide-to="1" class="d-none" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselgrid" data-bs-slide-to="2" class="d-none" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner justify-content-center">
+      <div class="carousel-item active">
+        <div class="gallery-mas-vendidos">
+            <div class="frame-mvendidos">
+                <img src="https://res.cloudinary.com/dl0ek5fh6/image/upload/v1740256781/robots/IMG/lyipdvxbdnzyrnbmyxia.jpg" alt="todo terreno inteligente blanco pequeño">
+            </div>
+            <div class="frame-mvendidos">
+                <img src="https://res.cloudinary.com/dl0ek5fh6/image/upload/v1740257195/robots/IMG/robotitos/imznfm9yfz31y2u4gwci.jpg" alt="robo garra verde tanque">
+            </div>
+            <div class="frame-mvendidos"> 
+                <img src="https://res.cloudinary.com/dl0ek5fh6/image/upload/v1740257198/robots/IMG/robotitos/wp4x9oahgrsjqksg4zsj.webp" alt="robot perro lanzallamas blanco">
+            </div>
+            <div class="frame-mvendidos"> 
+                <img src="https://res.cloudinary.com/dl0ek5fh6/image/upload/v1740257189/robots/IMG/robotitos/cbbevwhmxjujnbe4reud.jpg" alt="abejas inteligentes para cultivo">
+            </div>
+        </div>
+      </div>
+      
+      <div class="carousel-item">
+        <div class="gallery-mas-vendidos">
+            <div class="frame-mvendidos">
+                <img src="https://res.cloudinary.com/dl0ek5fh6/image/upload/v1740257201/robots/IMG/robotitos/imqe9t0bi5ma0eav83jv.jpg" alt="robo táctico verde cangrejo">
+            </div>
+            <div class="frame-mvendidos">
+                <img src="https://res.cloudinary.com/dl0ek5fh6/image/upload/v1740257198/robots/IMG/robotitos/muxxo9ihzkwcy2acygua.jpg" alt="tanque de combate blanco con radio">
+            </div>
+            <div class="frame-mvendidos"> 
+                <img src="https://res.cloudinary.com/dl0ek5fh6/image/upload/v1740257194/robots/IMG/robotitos/tulra9qiygtgvrk8mpir.jpg" alt="mina terrestre inteligente">
+            </div>
+            <div class="frame-mvendidos"> 
+                <img src="https://res.cloudinary.com/dl0ek5fh6/image/upload/v1740257186/robots/IMG/robotitos/vg8xdlbmbpuefzpxjy7v.webp" alt="robot patrulla mini ruedas">
+            </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="gallery-mas-vendidos">
+            <div class="frame-mvendidos">
+                <img src="https://res.cloudinary.com/dl0ek5fh6/image/upload/v1740256782/robots/IMG/hs2rywtkxxglrqwzrkxz.jpg" alt="maquina pesada levantadora para wharehouse">
+            </div>
+            <div class="frame-mvendidos">
+                <img src="https://res.cloudinary.com/dl0ek5fh6/image/upload/v1740257186/robots/IMG/robotitos/b3pygco3fuxulroarbgm.jpg" alt="robot perro negro con radar">
+            </div>
+            <div class="frame-mvendidos"> 
+                <img src="https://res.cloudinary.com/dl0ek5fh6/image/upload/v1740257192/robots/IMG/robotitos/gzywbb4eqa1kfkmchuwv.jpg" alt="handler robot levantando caja">
+            </div>
+            <div class="frame-mvendidos"> 
+                <img src="https://res.cloudinary.com/dl0ek5fh6/image/upload/v1740257197/robots/IMG/robotitos/xwgkhoo6octhwm4ruqet.webp" alt="robot con fusil y portavasos">
+            </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselgrid" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon square-arrow" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselgrid" data-bs-slide="next">
+      <span class="carousel-control-next-icon square-arrow" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Newsletter -->
+<!-- Se utiliza el elemento form de Bootstrap -->
+<section class="newsletter">
+    <div class="news-container">
+        <h2>Recibir novedades</h2>
+        <div class="news-form-container">
+            <form class="newsletter-form">
+                <div class="form-group">
+                    <label for="email-newsletter-component" class="visually-hidden">Ingresa tu Mail</label>
+                    <input type="email" class="form-control" id="email-newsletter-component" placeholder="Ingresa tu Mail" aria-label="email-newsletter-component" aria-describedby="email-newsletter-component" required>
+                </div>
+                <div class="btn-container">
+                    <button type="submit" class="btn btn-primary">Suscribirse</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+
+
+
+<!--FOOTER-->
+<!-- Se combina Grid y Flex para lograr redistribución Responsive, los links redirecionan al mismo sitio -->  
+<section class="footer">
+    <div class="footer-ro">
+        <div class="logo-footer"><a href="/index.html"><img src="../../public/IMG/Ico/cyberdyne-logo2.png" width="80" alt="cyberdyne logo"></a></div>
+        <div class="footer-social">   
+            <a href="#"><img src="../../public/IMG/Ico/footer-ico/discord.png" width="20" alt="logo discord"></a>
+            <a href="#"><img src="../../public/IMG/Ico/footer-ico/github.png" width="20" alt="logo github"></a>
+            <a href="#"><img src="../../public/IMG/Ico/footer-ico/instagram.png" width="20" alt="logo instagram"></a>
+            <a href="#"><img src="../../public/IMG/Ico/footer-ico/linkedin.png" width="20" alt="logo linkedin"></a>
+            <a href="#"><img src="../../public/IMG/Ico/footer-ico/twitch.png" width="20" alt="logo twitch"></a>
+            <a href="#"><img src="../../public/IMG/Ico/footer-ico/twitter-alt.png" width="20" alt="logo twitter"></a>
+        </div>
+    </div>
+        
+        <div class="footer-second">
+            <div class="footer-acerca">
+                <h3>ACERCA DE</h3>
+                <a href="#">Historia de la empresa</a>
+                <a href="#">Empleo</a>
+                <a href="#">Inversores</a>
+                <a href="#">Blog</a>
+                <a href="#">Empresa</a>
+                <a href="#">Contacto</a>
+            </div>
+            <div class="footer-acerca">
+                <h3>VALORES</h3>
+                <a href="#">Impacto social</a>
+                <a href="#">Sustentabilidad</a>
+                <a href="#">Medio ambiente</a>
+            </div>
+            <div class="footer-acerca">
+                <h3>PRODUCTOS</h3>
+                <a href="#">Astro</a>
+                <a href="#">Spot</a>
+                <a href="#">Metalhead</a>
+                <a href="#">Línea hogar</a>
+                <a href="#">T-Series</a>
+                <a href="#">Industrias</a>
+            </div>
+            <div class="footer-acerca">
+                <h3>COMUNIDAD</h3>
+                <a href="#">Contribuir</a>
+                <a href="#">Skynet</a>
+                <a href="#">Developers Hub</a>
+                <a href="#">Blog</a>
+                <a href="#">Partners</a>
+                <a href="#">Documentación</a>
+            </div>
+        </div>
+
+
+    </section>    
+
+    <footer class="bottom-footer">
+        <ul>
+             <li>
+                 <a href="">Términos y Condiciones | </a>
+             </li>
+             <li>
+                 <a href="">Privacidad (actualizada)  | </a>
+             </li>
+             <li>
+                 <a href="">Marcas Comerciales  |  </a>
+             </li>
+             <li>
+                 <a href="">Declaración sobre el trabajo forzoso  | </a>
+             </li>
+             <li>
+                 <a href="">Competencia Justa y Abierta  | </a>
+             </li>
+             <li>
+                 <a href="">Estrategia fiscal  | </a>
+             </li>
+             <li>
+                 <a href="">Política sobre “Cookies”   | </a>
+             </li>
+             <li>
+                 <a href=""></a>
+             </li>
+        </ul>     
+    </footer>
+
+
+
+    <!-- INDEX.JS -->
+    <script src="../index.js"></script>
+    <!-- BOOTSTRAP -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+</body>
+</html>

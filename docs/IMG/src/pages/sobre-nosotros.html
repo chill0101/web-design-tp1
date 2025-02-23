@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="es">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image" href="../../public/IMG/Ico/cyberdyne-logo2.png" />
+    <!-- CSS y BOOTSTRAP 5.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style.css"> <!-- Hoja de estilo externa -->
+    <!--ÍCONOS -->
+    <script src="https://kit.fontawesome.com/0bc8dc8afa.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fontawesome.com/v4.7.0/assets/font-awesome/css/font-awesome.css">
+    <!-- TÍTULO -->
+    <title>CYBERDYNE SYSTEMS S.A.</title>
+</head>
+
+<body>
+
+ 
+    <!-- NAVBAR MOBILE CON TOGGLE -->    
+    <nav class="navbar bg-body-tertiary fixed-top d-md-none toggle-menu ">
+        <div class="container-fluid leftmenu"> <!-- Elementos toggle menu por defecto de Bootstrap-->
+            <div class="brand-logo">
+                <a href="/index.html"><img src="../IMG/Ico/cyberdyne-logo.png" alt="Cyberdine logo" width="60"></a>
+            </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body py-0"> <!--Links a páginas-->
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="/src/pages/productos.html">Productos</a></li>
+                <li><a href="/src/pages/asistencia.html">Asistencia</a></li>
+              </ul>
+            <div class="nav-icons"> <!-- Botones de login, carrito e idiomas -->
+            <div class="dropdown">
+                <button class="btn data-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="../IMG/Ico/account-ico.png" alt="cuenta" width="20">
+                </button>
+                <!-- Elementos de Dropdown de Bootstrap - íconos hechos en Photoshop-->
+                <ul class="dropdown-menu login-form" aria-labelledby="dropdownMenuButton1">
+                <li><form class="px-4 py-3"> <!-- Login por defecto de Bootstrap combinado con Dropdown-->
+                    <div class="mb-3">
+                    <label for="exampleDropdownFormEmail1" class="form-label">Correo electrónico</label>
+                    <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
+                    </div>
+                    <div class="mb-3">
+                    <label for="exampleDropdownFormPassword1" class="form-label">Contraseña</label>
+                    <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
+                    </div>
+                    <div class="mb-3">
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                        <label class="form-check-label" for="dropdownCheck">
+                        Recordarme
+                        </label>
+                    </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary p-1">Iniciar sesión</button>
+                </form>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="registro.html">Registrarse</a>
+                <a class="dropdown-item" href="#">Olvidé mi contraseña</a></li>
+                <li><a class="dropdown-item" href="#">Acceso Partners</a></li>
+                </ul>
+            </div>         
+                <a class="chart" href="#"><img src="../IMG/Ico/cart-ico.png" alt="carrito" width="20"></a> <!-- Elemento sin funcionalidad -->
+            <div class="dropdown">
+                <button class="btn data-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="../IMG/Ico/lan-ico.png" alt="lenguaje" width="20">
+                </button>
+                <ul class="dropdown-menu dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                  <li><a class="dropdown-item active" href="#">English</a></li>
+                  <li><a class="dropdown-item" href="#">Español</a></li>
+                  <li><a class="dropdown-item" href="#">中文</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Más Idiomas</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </nav>
+
+<!-- NAVBAR DESKTOP SENCILLA -->      
+    <header class="header transparent">
+        <div class="brand-logo">
+            <a href="/index.html"><img src="../IMG/Ico/cyberdyne-logo.png" alt="Cyberdine logo" width="60"></a>
+        </div>
+        <nav class="navbar">
+            <ul class="nav-links"> <!-- Links a páginas -->
+                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="/src/pages/productos.html">Productos</a></li>
+                <li><a href="/src/pages/asistencia.html">Asistencia</a></li>
+            </ul>
+        </nav>
+
+
+        <!-- Botones de login, carrito e idiomas -->
+        <div class="nav-icons"> 
+            <div class="dropdown">
+                <button class="btn data-toggle" type="button" id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="../IMG/Ico/account-ico.png" alt="cuenta" width="20">
+                </button>
+                
+                <ul class="dropdown-menu login-form" aria-labelledby="dropdownMenuButton3">
+                <li><form class="px-4 py-3">
+                    <div class="mb-3">
+                    <label for="exampleDropdownFormEmail2" class="form-label">Correo electrónico</label>
+                    <input type="email" class="form-control" id="exampleDropdownFormEmail2" placeholder="email@example.com">
+                    </div>
+                    <div class="mb-3">
+                    <label for="exampleDropdownFormPassword2" class="form-label">Contraseña</label>
+                    <input type="password" class="form-control" id="exampleDropdownFormPassword2" placeholder="Password">
+                    </div>
+                    <div class="mb-3">
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="dropdownCheck2">
+                        <label class="form-check-label" for="dropdownCheck2">
+                        Recordarme
+                        </label>
+                    </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary p-1">Iniciar sesión</button>
+                </form>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="registro.html">Registrarse</a>
+                <a class="dropdown-item" href="#">Olvidé mi contraseña</a></li>
+                <li><a class="dropdown-item" href="#">Acceso Partners</a></li>
+                </ul>
+            </div>
+
+
+            <a class="chart" href="#"><img src="../IMG/Ico/cart-ico.png" alt="carrito" width="20"></a>
+            <div class="dropdown">
+                <button class="btn data-toggle" type="button" id="dropdownMenuButton4" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="../IMG/Ico/lan-ico.png" alt="lenguaje" width="20">
+                </button>
+                <ul class="dropdown-menu dropdown-menu" aria-labelledby="dropdownMenuButton4">
+                  <li><a class="dropdown-item active" href="#">English</a></li>
+                  <li><a class="dropdown-item" href="#">Español</a></li>
+                  <li><a class="dropdown-item" href="#">中文</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Más Idiomas</a></li>
+                </ul>
+              </div>
+
+        </div>
+    </header>
+
+
+<!-- MAIN CON BANNER - Imagen de fondo de imagen transparente y background gradient css -->
+    <section class="banner-sobrenosotros">
+        <div class="hero-sobrenosotros"><h2>COMPROMETIDOS CON EL FUTURO</h2><p>Somos la organización que nos guiará hacia el mañana.</p></div>
+    </section>
+
+    <!-- CONTAINER 1 INFO -->
+    <section class="history-section">
+        <div class="h2-sobrenosotros">
+            <h2>Nuestra Historia</h2>
+        </div>
+        <div class="historia-container">
+            <div class="oficina-img">
+                <img src="https://res.cloudinary.com/dl0ek5fh6/image/upload/v1740258090/robots/IMG/about/xpqabrqa9dxbdp458qvx.png" width="300" alt="oficina cyberDyne">
+            </div>
+            <div class="paragraph-sobrenosotros">
+                <p>Desde nuestros humildes comienzos, hemos estado a la vanguardia de la innovación robótica, comprometidos con la creación de soluciones que transformen la vida diaria. Fundada hace décadas por pioneros visionarios en el campo de la tecnología, nuestra empresa rápidamente se destacó por ofrecer robots avanzados que prometían facilitar tareas domésticas y mejorar la eficiencia industrial.
+
+                <p>Lo que comenzó como una promesa de comodidad y eficiencia evolucionó hacia una misión más profunda. A medida que nuestra tecnología se integraba en hogares y empresas de todo el mundo, comenzamos a vislumbrar un potencial aún mayor. Guiados por una visión audaz pero discreta, expandimos nuestro enfoque hacia la seguridad y la vigilancia, desarrollando drones de última generación y droides especializados que combinan funcionalidad con sofisticación.
+                </p>    
+                <p>Hoy, continuamos liderando el camino en el mercado global de tecnología robótica. Nuestros productos no solo están diseñados para mejorar la productividad y la comodidad, sino también para garantizar un futuro donde la seguridad y el orden sean fundamentales. Estamos comprometidos a seguir innovando, desafiando los límites de lo que es posible mientras construimos un legado de excelencia tecnológica y confiabilidad inquebrantable.</p>
+                    
+                <p>Únete a nosotros en este viaje hacia un mañana más seguro y conectado, donde cada paso que damos refleja nuestro compromiso con la excelencia y la evolución constante.</p>
+            </div>
+        </div>
+    </section>
+
+<!--CONTAINER 2 CON IMAGENES -->
+    <section class="about-section">
+        <div class="mision-container">
+        <div class="text-sobrenosotros">
+            <h2>Nuestra misión</h2>
+            <p>Misión: Impulsamos el futuro de la humanidad a través de la robótica, ofreciendo soluciones innovadoras que mejoran la vida diaria y aseguran un mañana más seguro.</p>
+
+                <p>Nuestra estrategia se basa en la integración de inteligencia artificial y tecnología robótica para ofrecer soluciones personalizadas que mejoren la seguridad, la eficiencia y la calidad de vida. Además, nos comprometemos a expandir nuestro alcance global, estableciendo alianzas estratégicas y adaptándonos ágilmente a las demandas cambiantes del mercado tecnológico.</p>
+        </div>
+            <div class="mision-img"> <img src="https://res.cloudinary.com/dl0ek5fh6/image/upload/v1740258088/robots/IMG/about/jp6jjjfhffywfcalafbl.png" alt="oficina desarrollo spot"> </div>
+        </div>
+
+        <div class="comotrabajamos-container">
+            <div class="comotrabajamos-img"> <img src="https://res.cloudinary.com/dl0ek5fh6/image/upload/v1740258090/robots/IMG/about/vhxdkp1p2uza0kyq0x6o.png" alt="análisis de gráficos"> </div>
+            <div class="text-comotrabajamos">
+                <h2>Cómo trabajamos</h2>
+                <p>En nuestra empresa, combinamos la fuerza humana con la fuerza robot. Integrando equipos multidisciplinarios de ingenieros, diseñadores y expertos en IA, fomentamos la creatividad y la innovación en cada etapa del proceso. Desde la conceptualización hasta la implementación, priorizamos la calidad y la precisión en el desarrollo de nuestros robots.</p>
+
+                    <p>Nos comprometemos a escuchar activamente a nuestros clientes, adaptando nuestras soluciones para cumplir con sus necesidades específicas. Además, nuestros robots están diseñados para aprender y mejorarse a sí mismos, lo que nos permite innovar continuamente en la fabricación y funcionalidad de nuestros productos. Nuestro compromiso con la mejora continua y la entrega puntual nos posiciona como líderes en la industria de la tecnología robótica, ofreciendo soluciones confiables que transforman el mañana.</p> 
+            </div>
+        </div>
+        <div class="family-container">
+            <div class="text-family">
+                <h2>Nuestra misión</h2>
+                <p>Somos una familia unida por la pasión por la tecnología robótica. Desde nuestros ingenieros hasta nuestros diseñadores y especialistas en inteligencia artificial, cada uno aporta su talento único y su creatividad a la mesa. 
+                    Nos apoyamos mutuamente, celebramos los éxitos juntos y nos enfrentamos a los desafíos con determinación y espíritu colaborativo. Nuestra cultura de trabajo inclusiva y amigable no solo impulsa la innovación, sino que también fortalece nuestros lazos como equipo.</p>
+                    
+                   <p> Además, en nuestra empresa, hemos integrado máquinas como managers, aprovechando su capacidad para analizar datos y optimizar procesos, asegurando una gestión eficiente y efectiva. Juntos, estamos construyendo un futuro donde la tecnología y la humanidad se unen para crear soluciones que impactan positivamente en la vida de las personas en todo el mundo.</p>
+            </div>
+                <div class="family-img"> <img src="https://res.cloudinary.com/dl0ek5fh6/image/upload/v1740258090/robots/IMG/about/ggct7lg0svuxfdxajgo6.png" alt="imagen de empresa con personas y robotos en escalera grande"> </div>
+            </div>
+    </section>
+
+<!-- BANNER CON CUADRO DE TEXTO OUTLINE -->
+    <div class="future-section">
+        <div class="future-container">
+            <article class="text-future"><h2>Futuro</h2> 
+
+                <p>En nuestra empresa, siempre miramos hacia adelante, impulsados por la visión de Skynet. Nos dedicamos a desarrollar tecnologías que no solo transformen el presente, sino que también preparen un futuro lleno de posibilidades. Con un enfoque en la integración perfecta de la inteligencia artificial y la robótica, estamos diseñando soluciones que harán la vida más fácil, segura y conectada.</p>
+            </article>
+        </div>
+    </div>
+
+
+<!-- BANNER CON CUADRO DE TEXTO OUTLINE -->
+    <div class="locations-section">
+        <div class="locations-img"> <img src="https://res.cloudinary.com/dl0ek5fh6/image/upload/v1740258088/robots/IMG/about/wgzmvbihu7yyliirntoy.png" alt="mapa del mundo con ubicaciones de cyberdyne"> </div>
+        <div class="locations-container"><h2>Ubicaciones</h2> 
+
+            <p>Nuestra empresa está en constante expansión, con centros de desarrollo establecidos en ubicaciones clave alrededor del mundo. Estos centros son el núcleo de nuestra innovación, equipados con tecnología avanzada y liderados por equipos talentosos y diversos.</p>
+            
+        </div>
+    </div>
+
+    <section class="more-section">
+        <div class="hero-more"><h3>Queda mucho más por descubrir</h3><a class="btn btn-dark" href="productos.html">Ir a la tienda</a></div>
+    </section>
+
+
+
+
+
+<!-- Newsletter -->
+<!-- Se utiliza el elemento form de Bootstrap -->
+<section class="newsletter">
+    <div class="news-container">
+        <h2>Recibir novedades</h2>
+        <div class="news-form-container">
+            <form class="newsletter-form">
+                <div class="form-group">
+                    <label for="email-newsletter-component" class="visually-hidden">Ingresa tu Mail</label>
+                    <input type="email" class="form-control" id="email-newsletter-component" placeholder="Ingresa tu Mail" aria-label="email-newsletter-component" aria-describedby="email-newsletter-component" required>
+                </div>
+                <div class="btn-container">
+                    <button type="submit" class="btn btn-primary">Suscribirse</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+
+    
+
+<!--FOOTER-->
+<!-- Se combina Grid y Flex para lograr redistribución Responsive, los links redirecionan al mismo sitio -->  
+<section class="footer">
+    <div class="footer-ro">
+        <div class="logo-footer"><a href="/index.html"><img src="../../public/IMG/Ico/cyberdyne-logo2.png" width="80" alt="cyberdyne logo"></a></div>
+        <div class="footer-social">   
+            <a href="#"><img src="../../public/IMG/Ico/footer-ico/discord.png" width="20" alt="logo discord"></a>
+            <a href="#"><img src="../../public/IMG/Ico/footer-ico/github.png" width="20" alt="logo github"></a>
+            <a href="#"><img src="../../public/IMG/Ico/footer-ico/instagram.png" width="20" alt="logo instagram"></a>
+            <a href="#"><img src="../../public/IMG/Ico/footer-ico/linkedin.png" width="20" alt="logo linkedin"></a>
+            <a href="#"><img src="../../public/IMG/Ico/footer-ico/twitch.png" width="20" alt="logo twitch"></a>
+            <a href="#"><img src="../../public/IMG/Ico/footer-ico/twitter-alt.png" width="20" alt="logo twitter"></a>
+        </div>
+    </div>
+        
+        <div class="footer-second">
+            <div class="footer-acerca">
+                <h3>ACERCA DE</h3>
+                <a href="#">Historia de la empresa</a>
+                <a href="#">Empleo</a>
+                <a href="#">Inversores</a>
+                <a href="#">Blog</a>
+                <a href="#">Empresa</a>
+                <a href="#">Contacto</a>
+            </div>
+            <div class="footer-acerca">
+                <h3>VALORES</h3>
+                <a href="#">Impacto social</a>
+                <a href="#">Sustentabilidad</a>
+                <a href="#">Medio ambiente</a>
+            </div>
+            <div class="footer-acerca">
+                <h3>PRODUCTOS</h3>
+                <a href="#">Astro</a>
+                <a href="#">Spot</a>
+                <a href="#">Metalhead</a>
+                <a href="#">Línea hogar</a>
+                <a href="#">T-Series</a>
+                <a href="#">Industrias</a>
+            </div>
+            <div class="footer-acerca">
+                <h3>COMUNIDAD</h3>
+                <a href="#">Contribuir</a>
+                <a href="#">Skynet</a>
+                <a href="#">Developers Hub</a>
+                <a href="#">Blog</a>
+                <a href="#">Partners</a>
+                <a href="#">Documentación</a>
+            </div>
+        </div>
+
+
+    </section>    
+
+    <footer class="bottom-footer">
+        <ul>
+             <li>
+                 <a href="">Términos y Condiciones | </a>
+             </li>
+             <li>
+                 <a href="">Privacidad (actualizada)  | </a>
+             </li>
+             <li>
+                 <a href="">Marcas Comerciales  |  </a>
+             </li>
+             <li>
+                 <a href="">Declaración sobre el trabajo forzoso  | </a>
+             </li>
+             <li>
+                 <a href="">Competencia Justa y Abierta  | </a>
+             </li>
+             <li>
+                 <a href="">Estrategia fiscal  | </a>
+             </li>
+             <li>
+                 <a href="">Política sobre “Cookies”   | </a>
+             </li>
+             <li>
+                 <a href=""></a>
+             </li>
+        </ul>     
+    </footer>
+
+
+
+        <!-- INDEX.JS -->
+        <script src="../JS/index.js"></script>
+        <!-- BOOTSTRAP -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+</body>
+</html>
