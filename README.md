@@ -16,11 +16,11 @@ Hay un mínimo de JavaScript incluido para generar el efecto de solidez en el St
 ## Adicionales
 Los banners y los íconos del NavBar están hechos con Photoshop.
 
--- Es una página estática
+-- Es una página estática sin funcionalidad incluida.
 
 ## Visualizar
 [Link a Github Pages! 🔗](https://chill0101.github.io/web-design-tp1/)
 
 
 
-Gracias por tu atención 😁
+Gracias por tu tiempo! 😁
