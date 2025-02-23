@@ -13,12 +13,13 @@ utilizando referencias de empresas de la vida real y mezclándolo con elementos 
 Utilizo HTML y CSS con Bootstrap para los elementos por defecto como Cards y Slider. 
 Hay un mínimo de JavaScript incluido para generar el efecto de solidez en el Sticky NavBar. 
 
-
-
+## Adicionales
+Los banners y los íconos del NavBar están hechos con Photoshop.
 
 -- Es una página estática
 
-## Link a Github Pages! 🔗
+## Visualizar
+[Link a Github Pages! 🔗](https://chill0101.github.io/web-design-tp1/)
 
 
 
