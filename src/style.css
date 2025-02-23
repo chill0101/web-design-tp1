@@ -960,7 +960,7 @@ input::-webkit-inner-spin-button {
   width: 100%;
   background: 
       
-      url("https://raw.githubusercontent.com/chill0101/tp-pw1/refs/heads/main/banner/spot-section.png?token=GHSAT0AAAAAAC3ZDN4MRUJLOCZT2G76ZZ22Z52JBWQ"),
+      url("https://res.cloudinary.com/dl0ek5fh6/image/upload/v1740339015/robots/IMG/auxdvytnkbmleij6nprn.png"),
       linear-gradient(0deg, rgba(245,247,250,1) 0%, rgba(195,207,226,1) 100%);
   background-size: 50%, cover; /* La imagen al 50% y el gradiente a cubrir */
   background-repeat: no-repeat, no-repeat; /* No repetir ambos fondos */
